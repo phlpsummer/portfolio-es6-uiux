@@ -234,11 +234,19 @@ header .gnb {
       margin-right: -20px; }
 
 .content {
-  background: #111;
-  min-height: 100vh; }
+  background: #2D2C4D;
+  min-height: 800px; }
   .content .inner {
     width: 1180px;
     margin: 0 auto;
+    padding-top: 3vw;
     position: relative; }
+    .content .inner h1 {
+      position: relative;
+      top: 150px;
+      text-align: center;
+      font: 700 34px/1 'Montserrat';
+      color: #a8cfd7;
+      margin-bottom: 30px; }
 
 /*# sourceMappingURL=style.css.map */
