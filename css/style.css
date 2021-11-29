@@ -45,8 +45,7 @@ header #btnMenu {
     top: 0px;
     left: 0;
     transform-origin: left bottom;
-    transition: 0.5s;
-    transition-delay: 0.5s; }
+    transition: 0.5s; }
   header #btnMenu::after {
     content: '';
     display: block;
@@ -57,14 +56,15 @@ header #btnMenu {
     bottom: 0px;
     right: 0;
     transform-origin: right top;
-    transition: 0.5s;
-    transition-delay: 0.5s; }
+    transition: 0.5s; }
   header #btnMenu.on span {
     transform: rotate(-45deg); }
   header #btnMenu.on::before {
-    transform: rotate(45deg) translate(-1px, -5px); }
+    transform: rotate(45deg) translate(-1px, -5px);
+    transition-delay: 0.5s; }
   header #btnMenu.on::after {
-    transform: rotate(45deg) translate(1px, 5px); }
+    transform: rotate(45deg) translate(1px, 5px);
+    transition-delay: 0.5s; }
 header .gnb {
   width: 100%;
   height: 100vh;
@@ -74,8 +74,7 @@ header .gnb {
   background: #111;
   z-index: 8;
   clip-path: circle(0% at 97% 3%);
-  transition: 0.5s;
-  transition-delay: 0.5s; }
+  transition: 0.5s; }
   header .gnb #navi {
     position: absolute;
     top: 50%;
@@ -93,14 +92,15 @@ header .gnb {
         content: '';
         display: block;
         width: 110%;
-        height: 8px;
+        height: 7px;
         background: #fff;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); }
   header .gnb.on {
-    clip-path: circle(150% at 97% 3%); }
+    clip-path: circle(150% at 97% 3%);
+    transition-delay: 0.5s; }
 
 #visual {
   width: 100%;

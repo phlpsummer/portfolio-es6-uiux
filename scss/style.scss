@@ -32,7 +32,6 @@ header {
             top: 0px; left: 0;
             transform-origin: left bottom;
             transition: 0.5s;
-            transition-delay: 0.5s;
         }
         &::after {
             content: ''; display: block;
@@ -42,13 +41,12 @@ header {
             bottom: 0px; right: 0; 
             transform-origin: right top;
             transition: 0.5s;
-            transition-delay: 0.5s;
         }
 
         &.on {
             span { transform: rotate(-45deg);}
-            &::before { transform: rotate(45deg) translate(-1px,-5px);}
-            &::after { transform: rotate(45deg) translate(1px,5px);}
+            &::before { transform: rotate(45deg) translate(-1px,-5px); transition-delay: 0.5s;}
+            &::after { transform: rotate(45deg) translate(1px,5px); transition-delay: 0.5s;}
         }
     }
 
@@ -60,7 +58,6 @@ header {
         z-index: 8;
         clip-path: circle(0% at 97% 3%);
         transition: 0.5s;
-        transition-delay: 0.5s;
         
         #navi {
             position: absolute;
@@ -76,7 +73,7 @@ header {
                     a {
                         &::after {
                             content: ''; display: block;
-                            width: 110%; height: 8px;
+                            width: 110%; height: 7px;
                             background: #fff;
                             position: absolute;
                             top: 50%; left: 50%; transform: translate(-50%,-50%);
@@ -86,7 +83,7 @@ header {
             }
         }
 
-        &.on { clip-path: circle(150% at 97% 3%);}
+        &.on { clip-path: circle(150% at 97% 3%); transition-delay: 0.5s;}
     }
 }
 
