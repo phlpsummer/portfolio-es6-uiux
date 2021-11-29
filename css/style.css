@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -7,14 +8,20 @@ ul, ol {
   list-style: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
 
 header #btnMenu {
   position: absolute;
   top: 3vw;
   right: 3vw;
-  width: 44px;
-  height: 35px;
+  width: 42px;
+  height: 32px;
   font-size: 0;
   text-indent: -999;
   z-index: 9;
@@ -31,37 +38,69 @@ header #btnMenu {
   header #btnMenu::before {
     content: '';
     display: block;
-    width: 50%;
+    width: 40%;
     height: 4px;
     background: #fff;
     position: absolute;
     top: 0px;
     left: 0;
     transform-origin: left bottom;
-    transition: 0.5s; }
+    transition: 0.5s;
+    transition-delay: 0.5s; }
   header #btnMenu::after {
     content: '';
     display: block;
-    width: 50%;
+    width: 40%;
     height: 4px;
     background: #fff;
     position: absolute;
     bottom: 0px;
     right: 0;
     transform-origin: right top;
-    transition: 0.5s; }
+    transition: 0.5s;
+    transition-delay: 0.5s; }
   header #btnMenu.on span {
     transform: rotate(-45deg); }
   header #btnMenu.on::before {
-    transform: rotate(45deg) translate(-4px, -4px); }
+    transform: rotate(45deg) translate(-1px, -5px); }
   header #btnMenu.on::after {
-    transform: rotate(45deg) translate(4px, 4px); }
-header aside {
+    transform: rotate(45deg) translate(1px, 5px); }
+header .gnb {
   width: 100%;
   height: 100vh;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  background: #111;
+  z-index: 8;
+  clip-path: circle(0% at 97% 3%);
+  transition: 0.5s;
+  transition-delay: 0.5s; }
+  header .gnb #navi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column; }
+    header .gnb #navi li {
+      margin: 7vh auto; }
+      header .gnb #navi li a {
+        font: 700 70px/1 'Montserrat';
+        color: #fff;
+        position: relative; }
+      header .gnb #navi li:hover a::after {
+        content: '';
+        display: block;
+        width: 110%;
+        height: 8px;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+  header .gnb.on {
+    clip-path: circle(150% at 97% 3%); }
 
 #visual {
   width: 100%;
