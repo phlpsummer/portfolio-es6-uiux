@@ -1,0 +1,78 @@
+header {
+    #btnMenu {
+        position: absolute;
+        top: 3vw; right: 3vw;
+        width: 42px; height: 32px;
+        font-size: 0; text-indent: -999;
+        z-index: 9;
+        cursor: pointer;
+
+        span {
+            width: 100%; height: 4px;
+            background: #fff;
+            position: absolute;
+            top: 50%; left: 0; margin-top: -2px;
+            transition: 0.5s;
+        }
+        &::before {
+            content: ''; display: block;
+            width: 40%; height: 4px;
+            background: #fff;
+            position: absolute;
+            top: 0px; left: 0;
+            transform-origin: left bottom;
+            transition: 0.5s;
+        }
+        &::after {
+            content: ''; display: block;
+            width: 40%; height: 4px;
+            background: #fff;
+            position: absolute;
+            bottom: 0px; right: 0; 
+            transform-origin: right top;
+            transition: 0.5s;
+        }
+
+        &.on {
+            span { transform: rotate(-45deg);}
+            &::before { transform: rotate(45deg) translate(-1px,-5px); transition-delay: 0.5s;}
+            &::after { transform: rotate(45deg) translate(1px,5px); transition-delay: 0.5s;}
+        }
+    }
+
+    .gnb {
+        width: 100%; height: 100vh;
+        position: absolute;
+        top: 0; left: 0;
+        background: #111;
+        z-index: 8;
+        clip-path: circle(0% at 97% 3%);
+        transition: 0.5s;
+        
+        #navi {
+            position: absolute;
+            top: 50%; left: 50%; transform: translate(-50%,-50%);
+            display: flex;
+            flex-direction: column;
+
+            li {
+                margin: 7vh auto;
+                a { font: 700 70px/1 'Montserrat'; color: #fff; position: relative;}
+
+                &:hover {
+                    a {
+                        &::after {
+                            content: ''; display: block;
+                            width: 110%; height: 7px;
+                            background: #fff;
+                            position: absolute;
+                            top: 50%; left: 50%; transform: translate(-50%,-50%);
+                        }
+                    }
+                }
+            }
+        }
+
+        &.on { clip-path: circle(150% at 97% 3%); transition-delay: 0.5s;}
+    }
+}
