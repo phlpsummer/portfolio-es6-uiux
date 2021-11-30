@@ -280,35 +280,46 @@ header .gnb {
     position: absolute;
     top: 100px;
     left: 50%;
-    margin-left: -50px; }
-  .gallery .inner #wrap .list::after {
-    content: '';
-    display: block;
-    clear: both; }
-  .gallery .inner #wrap .list .item {
-    width: calc(100% / 4);
-    padding: 12px;
-    float: left; }
-    .gallery .inner #wrap .list .item .panel {
-      width: 100%;
-      background: #fff;
-      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
-      .gallery .inner #wrap .list .item .panel .txt {
+    margin-left: -50px;
+    transition: 0.5s; }
+    .gallery .inner #wrap .loading.off {
+      opacity: 0; }
+  .gallery .inner #wrap .list {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 0.5s; }
+    .gallery .inner #wrap .list.on {
+      opacity: 1;
+      transform: translateY(0px); }
+    .gallery .inner #wrap .list::after {
+      content: '';
+      display: block;
+      clear: both; }
+    .gallery .inner #wrap .list .item {
+      width: calc(100% / 4);
+      padding: 12px;
+      float: left; }
+      .gallery .inner #wrap .list .item .panel {
         width: 100%;
-        padding: 15px; }
-        .gallery .inner #wrap .list .item .panel .txt p {
-          font: 700 20px/1.4 'Lato';
-          color: #333;
-          margin-bottom: 10px; }
-        .gallery .inner #wrap .list .item .panel .txt span {
-          font: 300 14px/1.2 'Lato';
-          color: #333; }
-      .gallery .inner #wrap .list .item .panel a {
-        display: block;
-        width: 100%;
-        font-size: 0; }
-        .gallery .inner #wrap .list .item .panel a img {
+        background: #fff;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3); }
+        .gallery .inner #wrap .list .item .panel .txt {
           width: 100%;
-          object-fit: contain; }
+          padding: 15px; }
+          .gallery .inner #wrap .list .item .panel .txt p {
+            font: 700 20px/1.4 'Lato';
+            color: #222;
+            margin-bottom: 10px; }
+          .gallery .inner #wrap .list .item .panel .txt span {
+            font: 300 14px/1.2 'Lato';
+            color: #333; }
+        .gallery .inner #wrap .list .item .panel a {
+          display: block;
+          width: 100%;
+          font-size: 0;
+          margin-top: 10px; }
+          .gallery .inner #wrap .list .item .panel a img {
+            width: 100%;
+            object-fit: contain; }
 
 /*# sourceMappingURL=style.css.map */
