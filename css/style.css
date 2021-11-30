@@ -254,20 +254,20 @@ header .gnb {
   align-items: center;
   font-size: 0;
   margin-bottom: 80px; }
-  .gallery .inner .searchBox input {
+  .gallery .inner .searchBox .searchBar {
     width: 18vw;
     height: 44px;
     border: 1px solid #fff;
     background: transparent;
-    font: 400 15px/1 'Noto Sans KR';
+    font: 400 18px/1 'Noto Sans KR';
     color: #fff;
     padding: 15px; }
-  .gallery .inner .searchBox button {
+  .gallery .inner .searchBox .btnSearch {
     width: 90px;
     height: 44px;
     border: 1px solid #fff;
     background: #fff;
-    font: 700 15px/44px 'Noto Sans KR';
+    font: 700 16px/44px 'Noto Sans KR';
     color: #2D2C4D;
     letter-spacing: 1px;
     cursor: pointer; }

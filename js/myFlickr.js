@@ -8,25 +8,71 @@ flickr.people.getPhotos
 
 
 */
+const searchBar = document.querySelector(".searchBar");
+const btnSearch = document.querySelector(".btnSearch");
 const loading = document.querySelector(".loading");
 const frame = document.querySelector(".list");
 const urlBase = "https://www.flickr.com/services/rest/?";
 const method1 = "flickr.people.getPhotos";
+const method2 = "flickr.photos.search";
 const key = "48fa09238ff7a579f7c89acef3c946b7";
 const user_id = "194176696@N08";
 const per_page = 15;
 const format = "json";
 
+//계정 업로드 이미지 검색
 const url1 = `${urlBase}method=${method1}&api_key=${key}&user_id=${user_id}&per_page=${per_page}&format=${format}&nojsoncallback=1`;
 
-fetch(url1)
-.then(data=>{
-    let result = data.json();
-    return result;
-})
-.then(json=>{
-    let items = json.photos.photo;
+//처음 로딩
+callData(url1);
 
+//주제 검색
+//버튼
+btnSearch.addEventListener("click",(e)=>{
+    e.preventDefault();
+    let search = searchBar.value;
+    if(search == "") return;
+
+    const url2 = `${urlBase}method=${method2}&api_key=${key}&tags=${search}&per_page=${per_page}&format=${format}&nojsoncallback=1&privacy_filter=1`;
+
+    callData(url2);
+});
+//엔터
+searchBar.addEventListener("keypress",(e)=>{
+    if(e.key == "Enter"){
+        let search = searchBar.value;
+        if(search == "") return;
+
+        const url2 = `${urlBase}method=${method2}&api_key=${key}&tags=${search}&per_page=${per_page}&format=${format}&nojsoncallback=1&privacy_filter=1`;
+
+        callData(url2);
+    }
+});
+
+
+function callData(url){
+    initData();
+
+    fetch(url)
+    .then(data=>{
+        let result = data.json();
+        return result;
+    })
+    .then(json=>{
+        let items = json.photos.photo;
+    
+        createList(items);
+        delayLoading();
+    })
+}
+
+function initData(){
+    frame.innerHTML = "";
+    loading.classList.remove("off");
+    frame.classList.remove("on");
+}
+
+function createList(items){
     let htmls = "";
 
     items.forEach(data => {
@@ -48,7 +94,9 @@ fetch(url1)
         `;
     });
     frame.innerHTML = htmls;
+}
 
+function delayLoading(){
     const imgs = frame.querySelectorAll("img");
     const lenImg = imgs.length;
     let countImg = 0;
@@ -64,7 +112,7 @@ fetch(url1)
             e.currentTarget.closest(".item").querySelector(".thumb").setAttribute("src","img/default.jpg");
         });
     }
-})
+}
 
 function isotopeLayout(){
     loading.classList.add("off");
@@ -76,3 +124,4 @@ function isotopeLayout(){
         transitionDuration: "0.5s"
     });
 }
+
