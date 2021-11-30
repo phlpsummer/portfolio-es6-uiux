@@ -12,7 +12,7 @@
             margin-bottom: 80px;
 
             .searchBar {
-                width: 18vw; height: 44px;
+                width: 350px; height: 44px;
                 border: 1px solid #fff;
                 background: transparent;
                 font: 400 18px/1 'Noto Sans KR'; color: #fff;
@@ -126,6 +126,69 @@
                 transform-origin: top right;
                 transform: rotate(-45deg);
                 margin-left: -25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1179px) {
+    .gallery {
+        .inner {
+
+            .searchBox {
+                .searchBar { width: 300px;}
+            }
+            #wrap {
+                .list {
+                    .item { width: calc(100% / 3);}
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:649px) {
+    .gallery {
+        .inner {
+            #wrap {
+                .list {
+                    .item { width: calc(100% / 2);}
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:539px) {
+    .gallery {
+        .inner {
+
+            .searchBox {
+                .searchBar {
+                    width: 180px;
+                    font-size: 14px;
+                }
+                .btnSearch {
+                    width: 70px;
+                    font-size: 14px;
+                }
+            }
+            #wrap {
+                .list {
+                    .item { width: calc(100% / 2);}
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:429px) {
+    .gallery {
+        .inner {
+            #wrap {
+                .list {
+                    .item { width: calc(100% / 1);}
+                }
             }
         }
     }
