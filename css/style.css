@@ -239,14 +239,59 @@ header .gnb {
   .content .inner {
     width: 1180px;
     margin: 0 auto;
-    padding-top: 3vw;
+    padding-top: 200px;
     position: relative; }
     .content .inner h1 {
       position: relative;
-      top: 150px;
       text-align: center;
       font: 700 34px/1 'Montserrat';
       color: #a8cfd7;
       margin-bottom: 30px; }
+
+.gallery .inner h1 {
+  margin-bottom: 60px; }
+.gallery .inner .searchBox {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+  margin-bottom: 80px; }
+  .gallery .inner .searchBox input {
+    width: 18vw;
+    height: 44px;
+    border: 1px solid #fff;
+    background: transparent;
+    font: 400 15px/1 'Noto Sans KR';
+    color: #fff;
+    padding: 15px; }
+  .gallery .inner .searchBox button {
+    width: 90px;
+    height: 44px;
+    border: 1px solid #fff;
+    background: #fff;
+    font: 700 15px/44px 'Noto Sans KR';
+    color: #2D2C4D;
+    letter-spacing: 1px;
+    cursor: pointer; }
+.gallery .inner #wrap {
+  width: 100%;
+  position: relative; }
+  .gallery .inner #wrap .loading {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -50px; }
+  .gallery .inner #wrap .list::after {
+    content: '';
+    display: block;
+    clear: both; }
+  .gallery .inner #wrap .list .item {
+    width: calc(100% / 4);
+    padding: 10px;
+    float: left; }
 
 /*# sourceMappingURL=style.css.map */
