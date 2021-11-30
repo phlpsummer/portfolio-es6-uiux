@@ -3,11 +3,11 @@
 194176696@N08
 https://www.flickr.com/services/rest/?method=flickr.test.echo&name=value
 https://live.staticflickr.com/{server-id}/{id}_{secret}_{size-suffix}.jpg
-flickr.interestingness.getList
+
 flickr.people.getPhotos
-
-
+flickr.photos.search
 */
+const main = document.querySelector("main");
 const searchBar = document.querySelector(".searchBar");
 const btnSearch = document.querySelector(".btnSearch");
 const loading = document.querySelector(".loading");
@@ -46,6 +46,32 @@ searchBar.addEventListener("keypress",(e)=>{
         const url2 = `${urlBase}method=${method2}&api_key=${key}&tags=${search}&per_page=${per_page}&format=${format}&nojsoncallback=1&privacy_filter=1`;
 
         callData(url2);
+    }
+});
+
+//동적 팝업
+frame.addEventListener("click",(e)=>{
+    e.preventDefault();
+
+    let target = e.target.closest(".item");
+    let imgSrc = target.querySelector("a").getAttribute("href");
+
+    let pop = document.createElement("aside");
+    let popHtmls = `
+        <img src="${imgSrc}">
+        <span class="btnClose">close</span>
+    `;
+    pop.innerHTML = popHtmls;
+    main.append(pop);
+});
+
+main.addEventListener("click",(e)=>{
+    e.preventDefault();
+
+    let target = e.target.closest("aside");
+    if(target != null) {
+        let imgFrame = target.querySelector("img");
+        if(e.target != imgFrame) target.remove();
     }
 });
 
