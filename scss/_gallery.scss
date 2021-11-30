@@ -42,20 +42,34 @@
 
                 .item {
                     width: calc(100% / 4);
-                    padding: 15px;
+                    padding: 12px;
                     float: left;
 
                     .panel {
                         width: 100%;
                         background: #fff;
-                        padding: 20px;
+                        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 
-                        p {
-                            font: 700 14px/1.4 'Lato'; color: #333;
-                            margin-bottom: 20px;
+                        .txt {
+                            width: 100%;
+                            padding: 15px;
+                            p {
+                                font: 700 20px/1.4 'Lato'; color: #333;
+                                margin-bottom: 10px;
+                            }
+                            span {
+                                font: 300 14px/1.2 'Lato'; color: #333;
+                            }
                         }
-                        span {
-                            font: 300 12px/1.2 'Lato'; color: #333;
+
+                        a {
+                            display: block;
+                            width: 100%;
+                            font-size: 0;
+                            img {
+                                width: 100%;
+                                object-fit: contain;
+                            }
                         }
                     }
                 }

@@ -38,8 +38,10 @@ fetch(url1)
         htmls += `
             <li class="item">
                 <div class="panel">
-                    <p>${data.title}</p>
-                    <span>${data.owner}</span>
+                    <div class="txt">
+                        <p>${data.title}</p>
+                        <span>${data.owner}</span>
+                    </div>
                     <a href="${imgSrc}"><img src="${thumbSrc}"></a>
                 </div>
             </li>

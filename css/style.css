@@ -287,18 +287,28 @@ header .gnb {
     clear: both; }
   .gallery .inner #wrap .list .item {
     width: calc(100% / 4);
-    padding: 15px;
+    padding: 12px;
     float: left; }
     .gallery .inner #wrap .list .item .panel {
       width: 100%;
       background: #fff;
-      padding: 20px; }
-      .gallery .inner #wrap .list .item .panel p {
-        font: 700 14px/1.4 'Lato';
-        color: #333;
-        margin-bottom: 20px; }
-      .gallery .inner #wrap .list .item .panel span {
-        font: 300 12px/1.2 'Lato';
-        color: #333; }
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
+      .gallery .inner #wrap .list .item .panel .txt {
+        width: 100%;
+        padding: 15px; }
+        .gallery .inner #wrap .list .item .panel .txt p {
+          font: 700 20px/1.4 'Lato';
+          color: #333;
+          margin-bottom: 10px; }
+        .gallery .inner #wrap .list .item .panel .txt span {
+          font: 300 14px/1.2 'Lato';
+          color: #333; }
+      .gallery .inner #wrap .list .item .panel a {
+        display: block;
+        width: 100%;
+        font-size: 0; }
+        .gallery .inner #wrap .list .item .panel a img {
+          width: 100%;
+          object-fit: contain; }
 
 /*# sourceMappingURL=style.css.map */
