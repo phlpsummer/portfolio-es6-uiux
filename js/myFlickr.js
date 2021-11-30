@@ -14,7 +14,7 @@ const urlBase = "https://www.flickr.com/services/rest/?";
 const method1 = "flickr.people.getPhotos";
 const key = "48fa09238ff7a579f7c89acef3c946b7";
 const user_id = "194176696@N08";
-const per_page = 10;
+const per_page = 15;
 const format = "json";
 
 const url1 = `${urlBase}method=${method1}&api_key=${key}&user_id=${user_id}&per_page=${per_page}&format=${format}&nojsoncallback=1`;

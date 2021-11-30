@@ -11,10 +11,6 @@ a {
   text-decoration: none;
   color: inherit; }
 
-body {
-  width: 100%;
-  overflow: hidden; }
-
 header #btnMenu {
   position: absolute;
   top: 3vw;
@@ -82,7 +78,7 @@ header .gnb {
     display: flex;
     flex-direction: column; }
     header .gnb #navi li {
-      margin: 7vh auto; }
+      margin: 4vh auto; }
       header .gnb #navi li a {
         font: 700 70px/1 'Montserrat';
         color: #fff;
@@ -235,7 +231,7 @@ header .gnb {
 
 .content {
   background: #2D2C4D;
-  min-height: 800px; }
+  min-height: 1600px; }
   .content .inner {
     width: 1180px;
     margin: 0 auto;
@@ -291,7 +287,18 @@ header .gnb {
     clear: both; }
   .gallery .inner #wrap .list .item {
     width: calc(100% / 4);
-    padding: 10px;
+    padding: 15px;
     float: left; }
+    .gallery .inner #wrap .list .item .panel {
+      width: 100%;
+      background: #fff;
+      padding: 20px; }
+      .gallery .inner #wrap .list .item .panel p {
+        font: 700 14px/1.4 'Lato';
+        color: #333;
+        margin-bottom: 20px; }
+      .gallery .inner #wrap .list .item .panel span {
+        font: 300 12px/1.2 'Lato';
+        color: #333; }
 
 /*# sourceMappingURL=style.css.map */
