@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> es6 portfolio</title>
+    <script src="https://kit.fontawesome.com/38274d1a6b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script defer src="js/anime.js"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/myPopup.js"></script>
+</head>
+<body> 
+    <header>
+        <div id="btnMenu"><span>menu</span></div>
+        <div class="gnb">
+            <ul id="navi">
+                <li><a href="index.html">Main</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="content about">
+        <div class="inner">
+            <h1>About</h1>
+            <div class="sub_visual"></div>
+        </div>
+
+    </main>
+    <aside id="popup">
+        <div class="panel">
+            <div class="popCate">NOTICE</div>
+            <div class="popImg"></div>
+            <div class="popTitle">코로나19 확산 방지를 위한<br>음식물 반입 금지 안내</div>
+            <p>물을 포함한 모든 음식물은 반입을 금지하고 있으며, 객석 내에서 금지된 음식물을 드시는 관객들에게는 로비를 이용하시라고 안내하고 있습니다.<br>또한 꽃다발 등 공연관람에 방해가 되는 물품은 물품보관소에 맡겨주시기 바랍니다.</p>
+            <div class="tail">
+                <input type="checkbox" name="popCheck" id="popCheck">
+                <label for="popCheck">오늘하루 보지않기</label>
+                <div class="close">close</div>
+            </div>
+        </div>
+    </aside>
+</body>
+</html>
