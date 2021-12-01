@@ -265,10 +265,10 @@ header .gnb {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(17, 17, 17, 0.6);
+  background: rgba(17, 17, 17, 0.7);
   z-index: 99; }
   #popup .panel {
-    width: 400px;
+    width: 360px;
     background: #fff;
     position: absolute;
     top: 50%;
@@ -299,7 +299,7 @@ header .gnb {
     #popup .panel .tail {
       width: 100%;
       height: 34px;
-      background: #a8cfd7;
+      background: #ddd;
       padding: 10px 20px; }
       #popup .panel .tail::after {
         content: '';
@@ -309,12 +309,12 @@ header .gnb {
         float: left; }
       #popup .panel .tail label {
         float: left;
-        font: 400 14px/1 'Noto Sans KR';
+        font: 300 14px/1 'Noto Sans KR';
         color: #333;
         margin-left: 8px; }
       #popup .panel .tail .close {
         float: right;
-        font: 400 16px/1 'Montserrat';
+        font: 500 16px/1 'Montserrat';
         color: #111;
         cursor: pointer; }
 
