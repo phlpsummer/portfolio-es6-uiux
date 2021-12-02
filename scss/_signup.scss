@@ -8,7 +8,7 @@
 
         input[type="checkbox"] { margin-right: 10px; margin-bottom: 10px; margin-top: 5px;}        
 
-        .agree_box {
+        .agreeBox {
             label { font: 400 15px/1 'Noto Sans KR'; color: #fff;}
 
             textarea {
@@ -31,7 +31,7 @@
         .wrap {
             width: 100%;
 
-            .left_intro {
+            .left {
                 width: 25%; height: 570px;
                 background: #a8cfd7;
                 float: left;
@@ -72,7 +72,7 @@
                 
             }
 
-            .right_essential {
+            .right {
                 width: 75%;
                 float: left;
                 padding: 0px 50px;
@@ -127,14 +127,20 @@
                                 &:focus { border-bottom: 2px solid #888; background: #fff;}
                             }
 
-                            input[type="radio"] { margin-right: 5px;}
+                            input[type="radio"] { margin-right: 8px;}
                             >label {
                                 font: 400 16px/1 'Noto Sans KR'; color: #fff;
                                 margin-right: 20px;
                             }
+
+                            //경고문
+                            p.alert {
+                                font: 400 15px/1 'Noto Sans KR'; color: #9ee082;
+                                margin-top: 5px;
+                            }
                         }
 
-                        .btnEmailConfirm {
+                        .btnMailCk {
                             display: inline-block;
                             width: 140px; height: 40px;
                             font: 400 15px/38px 'Noto Sans KR'; color: #fff;
@@ -153,7 +159,7 @@
                 }
             }
 
-            .btn_submit{
+            .btns{
                 float: left;
                 width: 100%;
                 text-align: center;
