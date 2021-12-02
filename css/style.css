@@ -624,7 +624,7 @@ header .gnb {
           border: none;
           border-bottom: 1px solid #fff;
           margin-top: 10px;
-          font: 400 17px/1 'Lato';
+          font: 300 16px/1 'Noto Sans KR';
           color: #fff;
           transition: 0.5s;
           background: #2D2C4D; }
@@ -633,17 +633,17 @@ header .gnb {
             color: #fff; }
           .signup .inner .wrap .right table tr td select:focus {
             border-bottom: 2px solid #888;
-            background: #fff; }
+            background: #1f1f3a; }
         .signup .inner .wrap .right table tr td input[type="radio"] {
           margin-right: 8px; }
         .signup .inner .wrap .right table tr td > label {
           font: 400 16px/1 'Noto Sans KR';
           color: #fff;
           margin-right: 20px; }
-        .signup .inner .wrap .right table tr td p.alert {
-          font: 400 15px/1 'Noto Sans KR';
+        .signup .inner .wrap .right table tr td p {
+          font: 300 15px/1 'Noto Sans KR';
           color: #9ee082;
-          margin-top: 5px; }
+          margin-top: 7px; }
       .signup .inner .wrap .right table tr .btnMailCk {
         display: inline-block;
         width: 140px;

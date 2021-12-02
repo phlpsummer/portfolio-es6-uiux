@@ -119,12 +119,12 @@
                                 border: none;
                                 border-bottom: 1px solid #fff;
                                 margin-top: 10px;
-                                font: 400 17px/1 'Lato'; color: #fff;
+                                font: 300 16px/1 'Noto Sans KR'; color: #fff;
                                 transition: 0.5s;
                                 background: #2D2C4D;
 
                                 &::placeholder { font: 400 16px/1 'Noto Sans KR'; color: #fff;}
-                                &:focus { border-bottom: 2px solid #888; background: #fff;}
+                                &:focus { border-bottom: 2px solid #888; background: #1f1f3a;}
                             }
 
                             input[type="radio"] { margin-right: 8px;}
@@ -134,9 +134,9 @@
                             }
 
                             //경고문
-                            p.alert {
-                                font: 400 15px/1 'Noto Sans KR'; color: #9ee082;
-                                margin-top: 5px;
+                            p {
+                                font: 300 15px/1 'Noto Sans KR'; color: #9ee082;
+                                margin-top: 7px;
                             }
                         }
 

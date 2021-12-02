@@ -11,7 +11,7 @@
     <script defer src="js/common.js"></script>
     <script defer src="js/myForm.js"></script>
     <script>
-        window.addEventListener("load",()=>{
+        window.addEventListener("load",(e)=>{
             new FormCheck("#member",[
                 {
                     type: "text",
@@ -33,7 +33,7 @@
                 },
                 {
                     type: "pwd",
-                    name: ["userpwd1","userpwd2"],
+                    name: ["userpwd","userpwd2"],
                     len: 8
                 }
             ]);
@@ -340,7 +340,7 @@
                                 </tr>
                                 <tr>
                                     <th scope="row"><label for="userpwd">PASSWORD</label></th>
-                                    <td><input type="password" name="userpwd1" id="userpwd1" placeholder="비밀번호 입력"></td>
+                                    <td><input type="password" name="userpwd" id="userpwd" placeholder="비밀번호 입력"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row"><label for="userpwd2">CONFIRM<br>PASSWORD</label></th>
@@ -357,7 +357,6 @@
                                     <td>
                                         <input type="text" name="email" id="email" placeholder="이메일 주소 입력">
                                         <select name="company" id="company">
-                                            <option value="">@ - 메일 주소 뒷자리 선택 -</option>
                                             <option value="naver">@ naver.com</option>
                                             <option value="gmail">@ gmail.com</option>
                                             <option value="nate">@ nate.com</option>
