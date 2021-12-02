@@ -73,6 +73,14 @@ header {
             }
         }
 
+        .sign {
+            display: block;
+            position: absolute;
+            top: 3vw; right: 3vw;
+            padding-right: 90px; padding-top: 4px;
+            font: 500 18px/1 'Montserrat'; color: #fff;
+        }
+
         &.on { clip-path: circle(150% at 97% 3%); transition-delay: 0.5s;}
     }
 }
