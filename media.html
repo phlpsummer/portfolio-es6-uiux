@@ -11,6 +11,15 @@
     <script defer src="js/anime.js"></script>
     <script defer src="js/common.js"></script>
     <script defer src="js/myYoutube.js"></script>
+    <script>
+        window.addEventListener("load",(e)=>{
+            new myYoutube(".vidGallery",{
+                key: "AIzaSyAMoGKvrd6wFxpLb2M8fXI83hwwuZjv7is",
+                playlist: "PLYOPkdUKSFgX5CgKf68RJzJHec0XEdBNd",
+                count: 4
+            });
+        });
+    </script>
 </head>
 <body> 
     <header>
@@ -29,7 +38,18 @@
         <div class="inner">
             <h1>Media</h1>
             
-            <div class="vidGallery"></div>
+            <div class="vidGallery">
+                <!-- <article>
+                    <a href="주소">
+                        <img src="썸네일">
+                    </a>
+                        <div class="con">
+                            <div class="title">제목</div>
+                            <p>설명</p>
+                            <span>날짜</span>
+                        </div>
+                </article> -->
+            </div>
         </div>
     </main>
 </body>

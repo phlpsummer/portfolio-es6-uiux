@@ -506,6 +506,93 @@ header .gnb {
 @media screen and (max-width: 429px) {
   .gallery .inner #wrap .list .item {
     width: calc(100% / 1); } }
+.media .inner h1 {
+  margin-bottom: 80px; }
+.media .inner .vidGallery::after {
+  content: '';
+  display: block;
+  clear: both; }
+.media .inner .vidGallery article:not(:first-child) {
+  width: 32%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden; }
+  .media .inner .vidGallery article:not(:first-child) a {
+    display: block;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background: #000; }
+    .media .inner .vidGallery article:not(:first-child) a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.6);
+      transition: 0.5s; }
+  .media .inner .vidGallery article:not(:first-child) .con {
+    width: 100%;
+    height: 144px;
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.5s; }
+    .media .inner .vidGallery article:not(:first-child) .con .title {
+      font: 700 15px/1 'Lato','Noto Sans KR';
+      color: #fff;
+      margin-bottom: 15px;
+      cursor: pointer; }
+    .media .inner .vidGallery article:not(:first-child) .con p {
+      font: 400 12px/1.2 'Lato','Noto Sans KR';
+      color: #ccc; }
+    .media .inner .vidGallery article:not(:first-child) .con span {
+      font: 400 11px/1.2 'Lato';
+      color: #9ee082;
+      position: absolute;
+      bottom: 15px;
+      left: 20px; }
+  .media .inner .vidGallery article:not(:first-child):hover a img {
+    filter: grayscale(1); }
+  .media .inner .vidGallery article:not(:first-child):hover .con {
+    top: 40%; }
+  .media .inner .vidGallery article:not(:first-child):last-of-type {
+    margin-right: 0%; }
+.media .inner .vidGallery article:first-child {
+  width: 100%;
+  float: left;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between; }
+  .media .inner .vidGallery article:first-child a {
+    width: 50%;
+    height: 360px;
+    overflow: hidden; }
+    .media .inner .vidGallery article:first-child a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.6); }
+  .media .inner .vidGallery article:first-child .con {
+    width: 45%;
+    height: 360px;
+    position: relative; }
+    .media .inner .vidGallery article:first-child .con .title {
+      font: 700 32px/1.4 'Lato','Noto Sans KR';
+      color: #fff;
+      margin-bottom: 30px; }
+    .media .inner .vidGallery article:first-child .con p {
+      font: 400 17px/1.6 'Lato','Noto Sans KR';
+      color: #ddd; }
+    .media .inner .vidGallery article:first-child .con span {
+      font: 400 16px/1.7 'Lato';
+      color: #9ee082;
+      position: absolute;
+      left: 0;
+      bottom: 0; }
+
 .signup .inner h2 {
   font: 500 22px/1 'Noto Sans KR';
   color: #fff;
