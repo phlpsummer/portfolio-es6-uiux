@@ -20,7 +20,7 @@ class myYoutube{
                 let vidDesc = item.snippet.description;
                 let vidDate = item.snippet.publishedAt;
 
-                if(vidTit.length > 40) vidTit = vidTit.substr(0,40)+"...";
+                if(vidTit.length > 50) vidTit = vidTit.substr(0,50)+"...";
                 if(vidDesc.length > 120) vidDesc = vidDesc.substr(0,120)+"...";
                 vidDate = vidDate.split("T")[0];
 
@@ -39,6 +39,28 @@ class myYoutube{
             });
             frame.innerHTML = resultHtml;
         })
+
+        frame.addEventListener("click",(e)=>{
+            e.preventDefault();
+            let target = e.target.closest("a");
+            if(target == null) return;
+            const vidId = target.getAttribute("href");
+            
+            let pop = document.createElement("aside");
+            pop.innerHTML=`
+                <iframe src="https://www.youtube.com/embed/${vidId}" frameborder="0" allowfullscreen></iframe>
+                <span class="btnClose">close</span>
+            `;
+            main.append(pop);
+        });
+
+        main.addEventListener("click",(e)=>{
+            const pop = main.querySelector("aside");
+            if(pop == null) return;
+
+            const close = pop.querySelector(".btnClose");
+            if(e.target == close) e.target.closest("aside").remove();
+        });
     }
 }
 
