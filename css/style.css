@@ -256,18 +256,15 @@ header .gnb {
     right: 9%;
     transform: translateY(-50%);
     overflow: hidden; }
+    #visual .rightVid .vidFrame {
+      width: 100%;
+      height: 300%;
+      position: absolute;
+      top: -100%;
+      left: 0; }
     #visual .rightVid li {
       width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0; }
-      #visual .rightVid li:nth-of-type(1) {
-        top: -100%;
-        z-index: 1; }
-      #visual .rightVid li:nth-of-type(3) {
-        top: 100%;
-        z-index: 1; }
+      height: calc(100% / 3); }
       #visual .rightVid li video {
         height: 100%;
         width: 100%;
