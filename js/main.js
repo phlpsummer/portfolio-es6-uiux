@@ -1,5 +1,6 @@
 const bgs = document.querySelectorAll(".bg li");
-const txts = document.querySelectorAll(".txt");
+const inner = document.querySelector(".inner");
+const txts = inner.querySelectorAll(".txt");
 const vids_ul = document.querySelector(".vidFrame");
 const vids = vids_ul.querySelectorAll("li");
 const btnPrev = document.querySelector(".btn .btnPrev");
@@ -20,6 +21,7 @@ btnNext.addEventListener("click",(e)=>{
             vids_ul.style.top = "-100%";
         }
     });
+
     //bg
     let j = i - 1;
     if(j < 0) j = 2;
@@ -34,5 +36,15 @@ btnNext.addEventListener("click",(e)=>{
             value: 1,
             duration: 750,
         });
-      }, 750);
+    }, 750);
+
+    //txt
+    inner.querySelector(".on").classList.add("upper");
+    setTimeout(()=>{
+        txts.forEach((txt)=>{
+            txt.classList.remove("on");
+            txt.classList.remove("upper");
+        });
+        txts[i].classList.add("on");
+    }, 1000);
 });
