@@ -1,5 +1,5 @@
 const bgs = document.querySelectorAll(".bg li");
-const inner = document.querySelector(".inner");
+const inner = document.querySelector("#visual .inner");
 const txts = inner.querySelectorAll(".txt");
 const vids_ul = document.querySelector(".vidFrame");
 const vids = vids_ul.querySelectorAll("li");
