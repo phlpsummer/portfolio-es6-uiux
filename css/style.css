@@ -1124,7 +1124,7 @@ footer {
   width: 100%; }
   .signup .inner .wrap .left {
     width: 25%;
-    height: 650px;
+    height: 700px;
     background: #a8cfd7;
     float: left;
     position: relative; }
@@ -1203,6 +1203,21 @@ footer {
           .signup .inner .wrap .right table tr td input[type="text"]:focus, .signup .inner .wrap .right table tr td input[type="password"]:focus {
             border-bottom: 2px solid #888;
             background: rgba(0, 0, 0, 0.02); }
+        .signup .inner .wrap .right table tr td select {
+          width: 400px;
+          height: 40px;
+          border: none;
+          border: 1px solid #fff;
+          font: 300 16px/1 'Noto Sans KR';
+          color: #fff;
+          transition: 0.5s;
+          background: #2D2C4D; }
+          .signup .inner .wrap .right table tr td select::placeholder {
+            font: 400 16px/1 'Noto Sans KR';
+            color: #fff; }
+          .signup .inner .wrap .right table tr td select:focus {
+            border-bottom: 2px solid #888;
+            background: #1f1f3a; }
         .signup .inner .wrap .right table tr td input[type="radio"] {
           margin-right: 8px; }
         .signup .inner .wrap .right table tr td > label {
@@ -1210,9 +1225,9 @@ footer {
           color: #fff;
           margin-right: 20px; }
         .signup .inner .wrap .right table tr td p {
-          font: 300 15px/1 'Noto Sans KR';
+          font: 300 12px/1 'Noto Sans KR';
           color: #9ee082;
-          margin-top: 7px; }
+          margin-top: 5px; }
       .signup .inner .wrap .right table tr #email {
         width: calc( 100% - 160px ); }
       .signup .inner .wrap .right table tr .btnMailCk {
@@ -1242,7 +1257,7 @@ footer {
       font: 300 16px/38px 'Noto Sans KR';
       color: #fff;
       background: #2D2C4D;
-      border: 1px solid #fff;
+      border: 2px solid #fff;
       margin-right: 10px;
       cursor: pointer; }
     .signup .inner .wrap .btns input[type="submit"] {
