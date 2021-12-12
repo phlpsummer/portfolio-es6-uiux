@@ -8,6 +8,9 @@ class FormCheck{
                 if(option.type === "text"){
                     if(!this.isTxt(option.name, option.len)) e.preventDefault();
                 }
+                if(option.type === "email"){
+                    if(!this.isEmail(option.name)) e.preventDefault();
+                }
                 if(option.type === "check"){
                     if(!this.isCheck(option.name)) e.preventDefault();
                 }
@@ -34,6 +37,24 @@ class FormCheck{
 
             const alert = document.createElement("p");
             alert.append(`해당 필수 텍스트를 ${len}글자 이상 입력하세요.`);
+            input.closest("td").append(alert);
+            return false;
+        }
+    }
+    isEmail(name){
+        const input = this.form.querySelector(`[name=${name}]`);
+        const txt = input.value;
+
+        if(/@/.test(txt)){
+            const errMsgs = input.closest("td").querySelectorAll("p");
+            if(errMsgs.length > 0) input.closest("td").querySelector("p").remove();
+            return true;
+        } else {
+            const errMsgs = input.closest("td").querySelectorAll("p");
+            if(errMsgs.length > 0) input.closest("td").querySelector("p").remove();
+
+            const alert = document.createElement("p");
+            alert.append(`메일 주소는 @을 포함한 전체 주소를 입력하세요.`);
             input.closest("td").append(alert);
             return false;
         }

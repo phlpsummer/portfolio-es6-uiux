@@ -114,19 +114,6 @@
                                 &:focus { border-bottom: 2px solid #888; background: rgba(0, 0, 0, 0.02);}
                             }
 
-                            select {
-                                width: calc( 100% - 160px ); height: 40px;
-                                border: none;
-                                border-bottom: 1px solid #fff;
-                                margin-top: 10px;
-                                font: 300 16px/1 'Noto Sans KR'; color: #fff;
-                                transition: 0.5s;
-                                background: #2D2C4D;
-
-                                &::placeholder { font: 400 16px/1 'Noto Sans KR'; color: #fff;}
-                                &:focus { border-bottom: 2px solid #888; background: #1f1f3a;}
-                            }
-
                             input[type="radio"] { margin-right: 8px;}
                             >label {
                                 font: 400 16px/1 'Noto Sans KR'; color: #fff;
@@ -139,6 +126,8 @@
                                 margin-top: 7px;
                             }
                         }
+
+                        #email { width: calc( 100% - 160px );}
 
                         .btnMailCk {
                             display: inline-block;
@@ -163,13 +152,13 @@
                 float: left;
                 width: 100%;
                 text-align: center;
-                margin-bottom: 150px;
+                margin-bottom: 150px; margin-top: 50px;
 
                 input[type="reset"] {
                     width: 150px; height: 40px;
                     font: 300 16px/38px 'Noto Sans KR'; color: #fff;
                     background: #2D2C4D;
-                    border: 2px solid #fff;
+                    border: 1px solid #fff;
                     margin-right: 10px;
                     cursor: pointer;
                 }
