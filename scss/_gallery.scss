@@ -11,16 +11,18 @@
 
             .searchBar {
                 width: 350px; height: 44px;
-                border: 1px solid #fff;
+                border: 3px solid #111;
                 background: transparent;
-                font: 400 18px/1 'Noto Sans KR'; color: #fff;
+                font: 300 18px/1 'Noto Sans KR'; color: #fff;
                 padding: 15px;
+
+                &::placeholder { font: 300 18px/1 'Noto Sans KR'; color: #fff;}
             }
             .btnSearch {
                 width: 90px; height: 44px;
-                border: 1px solid #fff;
-                background: #fff;
-                font: 700 16px/44px 'Noto Sans KR'; color: #2D2C4D; letter-spacing: 1px;
+                border: 3px solid #111;
+                background: #111;
+                font: 500 16px/42px 'Noto Sans KR'; color: #fff; letter-spacing: 1px;
                 cursor: pointer;
             }
         }
@@ -88,7 +90,7 @@
         width: 100%; height: 100vh;
         position: fixed;
         top: 0; left: 0;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.8);
         padding: 6vw 12vw;
         z-index: 9;
     

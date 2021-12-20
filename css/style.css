@@ -37,9 +37,9 @@ header {
     z-index: 9; }
     header .logo a {
       font: 40px/1 'Bangers';
-      color: #9ee082;
+      color: #f5e10d;
       letter-spacing: 1px;
-      text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3); }
+      text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.05); }
   header > .inner {
     width: 1180px;
     height: 100%;
@@ -523,7 +523,7 @@ footer {
           font: 400 13px/1 'Noto Sans KR';
           color: #777; } }
 .content {
-  background: #2D2C4D;
+  background: #56a29d;
   min-height: 100vh; }
   .content .inner {
     width: 1180px;
@@ -535,7 +535,7 @@ footer {
       position: relative;
       text-align: center;
       font: 700 34px/1 'Montserrat';
-      color: #a8cfd7;
+      color: #393df2;
       margin-bottom: 60px; }
 
 @media screen and (max-width: 1179px) {
@@ -557,7 +557,7 @@ footer {
   position: relative; }
   .about .inner .intro h2 {
     font: 500 18px/1 'Noto Sans KR';
-    color: #fff;
+    color: #222;
     margin-bottom: 50px; }
   .about .inner .intro::after {
     content: '';
@@ -568,11 +568,11 @@ footer {
     float: left; }
     .about .inner .intro .left h3 {
       font: 700 38px/1.4 'Montserrat';
-      color: #fff;
+      color: #111;
       margin-bottom: 20px; }
     .about .inner .intro .left p {
-      font: 300 16px/1.5 'Noto Sans KR';
-      color: #fff; }
+      font: 400 16px/1.5 'Noto Sans KR';
+      color: #111; }
   .about .inner .intro .right {
     width: 50%;
     float: right;
@@ -581,17 +581,17 @@ footer {
       margin-bottom: 50px; }
       .about .inner .intro .right .wrap h3 {
         font: bold 18px/1 'Montserrat';
-        color: #eee;
+        color: #111;
         margin-bottom: 18px; }
       .about .inner .intro .right .wrap p {
         font: 300 15px/1.4 'Noto Sans KR';
-        color: #bbb; }
+        color: #111; }
 .about .inner .values {
   width: 100%;
   margin-bottom: 50px; }
   .about .inner .values h2 {
     font: 700 28px/1 'Lato';
-    color: #fff;
+    color: #111;
     margin-bottom: 30px; }
   .about .inner .values .wrap {
     width: 100%;
@@ -608,29 +608,29 @@ footer {
       .about .inner .values .wrap article .txt {
         width: 100%;
         height: 100%;
-        border-top: 3px solid #fff;
+        border-top: 3px solid #666;
         transition: 0.5s; }
         .about .inner .values .wrap article .txt span {
           display: inline-block;
           margin-top: 15px;
           font: 500 15px/1.2 'Noto Sans KR';
-          color: #999; }
+          color: #555; }
         .about .inner .values .wrap article .txt h3 {
           padding-top: 30px;
           font: 500 1vw/1.1 'Montserrat';
-          color: #fff;
+          color: #111;
           letter-spacing: 1px;
           margin-bottom: 30px;
           transition: 1s; }
         .about .inner .values .wrap article .txt .subtitle {
           font: 400 22px/1.4 'Noto Sans KR';
-          color: #fff;
+          color: #111;
           margin-bottom: 50px;
           transition: 0.5s; }
         .about .inner .values .wrap article .txt .arrow {
           width: 32px;
           height: 3px;
-          background: #fff;
+          background: #111;
           position: relative;
           transition: 0.5s; }
           .about .inner .values .wrap article .txt .arrow::after {
@@ -638,7 +638,7 @@ footer {
             display: block;
             width: 14px;
             height: 3px;
-            background: #fff;
+            background: #111;
             position: absolute;
             top: 0;
             right: 0;
@@ -646,7 +646,7 @@ footer {
             transform-origin: right center; }
         .about .inner .values .wrap article .txt p {
           font: 300 15px/1.6 'Noto Sans KR';
-          color: #ccc;
+          color: #111;
           display: none;
           opacity: 0;
           transition: 0.5s; }
@@ -655,7 +655,7 @@ footer {
         display: block;
         width: 100%;
         height: 90%;
-        background: #333;
+        background: #f5e10d;
         z-index: -1;
         position: absolute;
         top: 150px;
@@ -667,7 +667,7 @@ footer {
         opacity: 1;
         z-index: 2; }
         .about .inner .values .wrap article:hover .txt {
-          border-top: 3px solid #9ee082; }
+          border-top: 3px solid #393df2; }
           .about .inner .values .wrap article:hover .txt h3 {
             font-size: 1.5vw;
             padding-top: 20px;
@@ -683,7 +683,7 @@ footer {
             opacity: 1; }
         .about .inner .values .wrap article:hover::before {
           top: 0px;
-          opacity: 0.5; }
+          opacity: 0.3; }
 .about .inner .department {
   width: 100%;
   min-height: 500px; }
@@ -698,11 +698,11 @@ footer {
       transform: translateX(-50%); }
       .about .inner .department .divi_tree li .ceo > p {
         font: 500 16px/1 'Noto Sans KR';
-        color: #eee;
+        color: #111;
         margin-bottom: 5px; }
       .about .inner .department .divi_tree li .ceo > span {
         font: 700 26px/1 'Noto Sans KR';
-        color: #fff;
+        color: #111;
         letter-spacing: 1px; }
       .about .inner .department .divi_tree li .ceo::after {
         content: '';
@@ -713,7 +713,7 @@ footer {
         top: 70px;
         left: 50%;
         margin-left: -1px;
-        background: #fff; }
+        background: #111; }
     .about .inner .department .divi_tree li ul {
       width: 100%;
       margin-top: 90px; }
@@ -727,12 +727,12 @@ footer {
         float: left; }
         .about .inner .department .divi_tree li ul li .member {
           width: 100%;
-          border: 1px solid #777;
+          border: 1px solid #444;
           padding: 25px 20px; }
           .about .inner .department .divi_tree li ul li .member .wrap {
             width: 100%;
             padding-bottom: 15px;
-            border-bottom: 1px solid #777;
+            border-bottom: 1px solid #444;
             margin-bottom: 15px; }
             .about .inner .department .divi_tree li ul li .member .wrap::after {
               content: '';
@@ -742,20 +742,20 @@ footer {
               display: block;
               float: left;
               font: 500 18px/1 'Noto Sans KR';
-              color: #eee; }
+              color: #111; }
             .about .inner .department .divi_tree li ul li .member .wrap .depart {
               display: block;
               float: right;
               font: 300 15px/1 'Noto Sans KR';
-              color: #ccc; }
+              color: #111; }
           .about .inner .department .divi_tree li ul li .member .num {
             display: inline-block;
             font: 300 15px/1 'Noto Sans KR';
-            color: #ccc;
+            color: #222;
             margin-bottom: 10px; }
           .about .inner .department .divi_tree li ul li .member > p {
             font: 300 14px/1.5 'Noto Sans KR';
-            color: #ccc; }
+            color: #222; }
         .about .inner .department .divi_tree li ul li:nth-of-type(3n) {
           margin: 0px 0px 20px; }
 
@@ -829,18 +829,21 @@ footer {
   .gallery .inner .searchBox .searchBar {
     width: 350px;
     height: 44px;
-    border: 1px solid #fff;
+    border: 3px solid #111;
     background: transparent;
-    font: 400 18px/1 'Noto Sans KR';
+    font: 300 18px/1 'Noto Sans KR';
     color: #fff;
     padding: 15px; }
+    .gallery .inner .searchBox .searchBar::placeholder {
+      font: 300 18px/1 'Noto Sans KR';
+      color: #fff; }
   .gallery .inner .searchBox .btnSearch {
     width: 90px;
     height: 44px;
-    border: 1px solid #fff;
-    background: #fff;
-    font: 700 16px/44px 'Noto Sans KR';
-    color: #2D2C4D;
+    border: 3px solid #111;
+    background: #111;
+    font: 500 16px/42px 'Noto Sans KR';
+    color: #fff;
     letter-spacing: 1px;
     cursor: pointer; }
 .gallery .inner #wrap {
@@ -899,7 +902,7 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   padding: 6vw 12vw;
   z-index: 9; }
   .gallery aside img {
@@ -1005,7 +1008,7 @@ footer {
       color: #ccc; }
     .media .inner .vidGallery article:not(:first-child) .con span {
       font: 400 11px/1.2 'Lato';
-      color: #9ee082;
+      color: #f5e10d;
       position: absolute;
       bottom: 15px;
       left: 20px; }
@@ -1036,14 +1039,14 @@ footer {
     position: relative; }
     .media .inner .vidGallery article:first-child .con .title {
       font: 700 32px/1.4 'Lato','Noto Sans KR';
-      color: #fff;
+      color: #222;
       margin-bottom: 30px; }
     .media .inner .vidGallery article:first-child .con p {
       font: 400 17px/1.6 'Lato','Noto Sans KR';
-      color: #ddd; }
+      color: #333; }
     .media .inner .vidGallery article:first-child .con span {
       font: 400 16px/1.7 'Lato';
-      color: #9ee082;
+      color: #f5e10d;
       position: absolute;
       left: 0;
       bottom: 0; }
@@ -1096,7 +1099,7 @@ footer {
 
 .signup .inner h2 {
   font: 500 22px/1 'Noto Sans KR';
-  color: #fff;
+  color: #111;
   margin-bottom: 40px; }
 .signup .inner input[type="checkbox"] {
   margin-right: 10px;
@@ -1104,23 +1107,23 @@ footer {
   margin-top: 5px; }
 .signup .inner .agreeBox label {
   font: 400 15px/1 'Noto Sans KR';
-  color: #fff; }
+  color: #111; }
 .signup .inner .agreeBox textarea {
   width: 100%;
   height: 150px;
   resize: none;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   border: none;
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
   margin-bottom: 30px;
   margin-top: 10px;
   font: 300 13px/1.5 'Noto Sans KR';
-  color: #bbb; }
+  color: #444; }
 .signup .inner .agreeBox .marketingNotice {
   font: 300 14px/1.6 'Noto Sans KR';
-  color: #eee;
+  color: #444;
   margin-bottom: 100px;
   margin-top: 15px; }
 .signup .inner .wrap {
@@ -1128,7 +1131,7 @@ footer {
   .signup .inner .wrap .left {
     width: 25%;
     height: 700px;
-    background: #a8cfd7;
+    background: #ccc;
     float: left;
     position: relative; }
     .signup .inner .wrap .left > img {
@@ -1177,8 +1180,8 @@ footer {
         width: 18%;
         text-align: left;
         padding: 0px 0px 50px;
-        font: 400 15px/1.3 'Montserrat';
-        color: #a8cfd7; }
+        font: 500 15px/1.3 'Montserrat';
+        color: #111; }
         .signup .inner .wrap .right table tr th::after {
           content: '*';
           display: inline-block;
@@ -1191,45 +1194,47 @@ footer {
         padding: 0px 20px 50px; }
         .signup .inner .wrap .right table tr td ul li {
           font: 300 14px/1 'Noto Sans KR';
-          color: #eee;
+          color: #111;
           margin-top: 10px; }
         .signup .inner .wrap .right table tr td input[type="text"], .signup .inner .wrap .right table tr td input[type="password"] {
           width: 100%;
           height: 40px;
           border: none;
-          border-bottom: 1px solid #fff;
+          border-bottom: 1px solid #111;
           transition: 0.5s;
-          background: #2D2C4D; }
+          background: transparent;
+          padding-left: 10px; }
           .signup .inner .wrap .right table tr td input[type="text"]::placeholder, .signup .inner .wrap .right table tr td input[type="password"]::placeholder {
             font: 400 16px/1 'Noto Sans KR';
-            color: #999; }
+            color: #555; }
           .signup .inner .wrap .right table tr td input[type="text"]:focus, .signup .inner .wrap .right table tr td input[type="password"]:focus {
-            border-bottom: 2px solid #888;
-            background: rgba(0, 0, 0, 0.02); }
+            border-bottom: 2px solid #f5e10d;
+            outline: none; }
         .signup .inner .wrap .right table tr td select {
           width: 400px;
           height: 40px;
           border: none;
-          border: 1px solid #fff;
+          border: 1px solid #333;
           font: 300 16px/1 'Noto Sans KR';
-          color: #fff;
+          color: #111;
           transition: 0.5s;
-          background: #2D2C4D; }
+          background: transparent;
+          padding-left: 10px; }
           .signup .inner .wrap .right table tr td select::placeholder {
             font: 400 16px/1 'Noto Sans KR';
-            color: #fff; }
+            color: #555; }
           .signup .inner .wrap .right table tr td select:focus {
-            border-bottom: 2px solid #888;
-            background: #1f1f3a; }
+            outline: none;
+            background: #f5e10d; }
         .signup .inner .wrap .right table tr td input[type="radio"] {
           margin-right: 8px; }
         .signup .inner .wrap .right table tr td > label {
           font: 400 16px/1 'Noto Sans KR';
-          color: #fff;
+          color: #111;
           margin-right: 20px; }
         .signup .inner .wrap .right table tr td p {
           font: 300 12px/1 'Noto Sans KR';
-          color: #9ee082;
+          color: #393df2;
           margin-top: 5px; }
       .signup .inner .wrap .right table tr #email {
         width: calc( 100% - 160px ); }
@@ -1237,9 +1242,9 @@ footer {
         display: inline-block;
         width: 140px;
         height: 40px;
-        font: 400 15px/38px 'Noto Sans KR';
-        color: #fff;
-        border: 1px solid #fff;
+        font: 300 15px/38px 'Noto Sans KR';
+        color: #111;
+        border: 1px solid #111;
         text-align: center;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -1258,17 +1263,17 @@ footer {
       width: 150px;
       height: 40px;
       font: 300 16px/38px 'Noto Sans KR';
-      color: #fff;
-      background: #2D2C4D;
-      border: 2px solid #fff;
+      color: #111;
+      background: transparent;
+      border: 2px solid #333;
       margin-right: 10px;
       cursor: pointer; }
     .signup .inner .wrap .btns input[type="submit"] {
       width: 150px;
       height: 40px;
-      font: 500 16px/38px 'Noto Sans KR';
-      color: #333;
-      background: #fff;
+      font: 300 16px/38px 'Noto Sans KR';
+      color: #fff;
+      background: #111;
       border: none;
       cursor: pointer; }
 
