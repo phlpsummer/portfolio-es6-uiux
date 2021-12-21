@@ -13,10 +13,10 @@
                 width: 350px; height: 44px;
                 border: 3px solid #111;
                 background: transparent;
-                font: 300 18px/1 'Noto Sans KR'; color: #fff;
+                font: 400 18px/1 'Noto Sans KR'; color: #111;
                 padding: 15px;
 
-                &::placeholder { font: 300 18px/1 'Noto Sans KR'; color: #fff;}
+                &::placeholder { font: 400 18px/1 'Noto Sans KR'; color: #777;}
             }
             .btnSearch {
                 width: 90px; height: 44px;

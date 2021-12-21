@@ -37,7 +37,7 @@ header {
     z-index: 9; }
     header .logo a {
       font: 40px/1 'Bangers';
-      color: #f5e10d;
+      color: #e26a3f;
       letter-spacing: 1px;
       text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.05); }
   header > .inner {
@@ -523,7 +523,7 @@ footer {
           font: 400 13px/1 'Noto Sans KR';
           color: #777; } }
 .content {
-  background: #56a29d;
+  background: #a8c8d1;
   min-height: 100vh; }
   .content .inner {
     width: 1180px;
@@ -655,7 +655,7 @@ footer {
         display: block;
         width: 100%;
         height: 90%;
-        background: #f5e10d;
+        background: #fff;
         z-index: -1;
         position: absolute;
         top: 150px;
@@ -831,12 +831,12 @@ footer {
     height: 44px;
     border: 3px solid #111;
     background: transparent;
-    font: 300 18px/1 'Noto Sans KR';
-    color: #fff;
+    font: 400 18px/1 'Noto Sans KR';
+    color: #111;
     padding: 15px; }
     .gallery .inner .searchBox .searchBar::placeholder {
-      font: 300 18px/1 'Noto Sans KR';
-      color: #fff; }
+      font: 400 18px/1 'Noto Sans KR';
+      color: #777; }
   .gallery .inner .searchBox .btnSearch {
     width: 90px;
     height: 44px;
