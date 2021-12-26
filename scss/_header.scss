@@ -9,8 +9,31 @@ header {
         top: 42px; left: 4vw;
         font-size: 0;
         z-index: 9;
-        a { font: 40px/1 'Bangers'; color: #e26a3f; letter-spacing: 1px; text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.05);}
+        a {
+            display: inline-block;
+            width: 110px; height: 30px;
+            position: relative;
+            .first {
+                width: 90px; height: 30px;
+                background: #e26a3f;
+                position: absolute; top: 0; left: 0;
+                font: 800 17px/30px 'Montserrat'; color: #393df2; text-align: center;
+
+                &::after {
+                    content: ''; display: block;
+                    width: 14px; height: 3px;
+                    position: absolute;
+                    bottom: 0; left: 97px;
+                    background: #e26a3f;
+                }
+            }
+            .second {
+                position: absolute; top: 0; right: 0;
+                font: 600 22px/1 'Montserrat'; color: #e26a3f;
+            }
+        }
     }
+
 
     >.inner {
         width: 1180px; height: 100%;
