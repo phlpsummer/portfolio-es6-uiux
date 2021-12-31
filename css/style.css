@@ -152,14 +152,14 @@ header {
       transition: 0.5s; }
     header #btnMenu.on span {
       transform: rotate(-45deg);
-      background: #f5e10d; }
+      background: #e26a3f; }
     header #btnMenu.on::before {
       transform: rotate(45deg) translate(-1px, -5px);
-      background: #f5e10d;
+      background: #e26a3f;
       transition-delay: 0.5s; }
     header #btnMenu.on::after {
       transform: rotate(45deg) translate(1px, 5px);
-      background: #f5e10d;
+      background: #e26a3f;
       transition-delay: 0.5s; }
   header .gnb {
     width: 100%;
@@ -1033,7 +1033,7 @@ footer {
       color: #ccc; }
     .media .inner .vidGallery article:not(:first-child) .con span {
       font: 400 11px/1.2 'Lato';
-      color: #f5e10d;
+      color: #e26a3f;
       position: absolute;
       bottom: 15px;
       left: 20px; }
@@ -1067,7 +1067,7 @@ footer {
       color: #222;
       margin-bottom: 30px; }
     .media .inner .vidGallery article:first-child .con p {
-      font: 400 17px/1.6 'Lato','Noto Sans KR';
+      font: 400 18px/1.6 'Lato','Noto Sans KR';
       color: #333; }
     .media .inner .vidGallery article:first-child .con span {
       font: 500 16px/1.7 'Lato';

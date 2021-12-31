@@ -114,9 +114,9 @@ header {
         }
 
         &.on {
-            span { transform: rotate(-45deg); background: #f5e10d;}
-            &::before { transform: rotate(45deg) translate(-1px,-5px); background: #f5e10d; transition-delay: 0.5s;}
-            &::after { transform: rotate(45deg) translate(1px,5px); background: #f5e10d; transition-delay: 0.5s;}
+            span { transform: rotate(-45deg); background: #e26a3f;}
+            &::before { transform: rotate(45deg) translate(-1px,-5px); background: #e26a3f; transition-delay: 0.5s;}
+            &::after { transform: rotate(45deg) translate(1px,5px); background: #e26a3f; transition-delay: 0.5s;}
         }
     }
 
