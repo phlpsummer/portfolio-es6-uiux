@@ -203,157 +203,156 @@ header {
 #visual {
   width: 100%;
   height: 100vh;
+  background: #111;
   position: relative;
-  overflow: hidden;
-  background: #000; }
-  #visual .bg {
-    width: 85%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0; }
-    #visual .bg li {
-      position: absolute;
-      top: 0;
-      left: 0;
+  overflow: hidden; }
+  #visual main {
+    width: 100%;
+    height: 100%; }
+    #visual main .bg {
       width: 100%;
       height: 100%;
-      opacity: 0; }
-      #visual .bg li:nth-of-type(2) {
-        opacity: 1; }
-      #visual .bg li img {
+      overflow: hidden; }
+      #visual main .bg li {
         width: 100%;
         height: 100%;
-        object-fit: cover;
-        object-position: center center;
-        filter: grayscale(0.6) brightness(0.5); }
-      #visual .bg li.band img {
-        filter: grayscale(0.4) brightness(0.5); }
-      #visual .bg li.classic img {
-        filter: grayscale(0.3) brightness(0.6); }
-  #visual .bgBlur {
-    width: 65%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px) brightness(0.6);
-    z-index: 1; }
-  #visual .inner {
-    width: 1180px;
-    height: 100%;
-    margin: 0 auto;
-    position: relative; }
-    #visual .inner .txt {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: scale(1.2);
+        transform-origin: center;
+        filter: brightness(0.4) blur(5px); }
+        #visual main .bg li:nth-of-type(1) {
+          background: url("../img/visual1.jpg") no-repeat center/cover; }
+        #visual main .bg li:nth-of-type(2) {
+          opacity: 1;
+          background: url("../img/visual2.jpg") no-repeat center/cover; }
+        #visual main .bg li:nth-of-type(3) {
+          background: url("../img/visual3.jpg") no-repeat center/cover; }
+    #visual main .mainImg {
       width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0; }
-      #visual .inner .txt .title {
+      height: 100%; }
+      #visual main .mainImg li {
+        z-index: 2;
+        width: 100%;
+        height: 100%;
         position: absolute;
         left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 2; }
-        #visual .inner .txt .title li {
+        top: 0;
+        overflow: hidden;
+        transition: 1s;
+        clip-path: circle(0vw at 50% 50.3%); }
+        #visual main .mainImg li img {
           width: 100%;
-          height: 82px;
-          margin-bottom: 15px;
-          overflow: hidden;
-          transform: translateY(-2px);
-          position: relative; }
-          #visual .inner .txt .title li span {
-            font: 800 82px/1 'Montserrat';
-            color: #fff;
-            opacity: 0;
-            position: relative;
-            top: 100%;
-            transition: 0.5s; }
-          #visual .inner .txt .title li:nth-of-type(2) {
-            margin-bottom: 0; }
-            #visual .inner .txt .title li:nth-of-type(2) span {
-              transition: 0.5s 0.3s; }
-      #visual .inner .txt p {
-        position: absolute;
-        width: 35%;
-        left: 7%;
-        top: 65%;
-        font: 300 15px/1.8 'Noto Sans KR';
-        color: #bbb;
-        z-index: 2;
-        opacity: 0;
-        transform: translateY(100%);
-        transition: 0.5s; }
-      #visual .inner .txt:nth-of-type(3) .title li span {
-        font-size: 80px;
-        letter-spacing: -1px; }
-      #visual .inner .txt:nth-of-type(3) > p {
-        left: 20%;
-        top: 24%;
-        width: 25%; }
-      #visual .inner .txt:nth-of-type(1) > p {
-        left: 28%;
-        top: 66%; }
-      #visual .inner .txt.on .title li span {
-        opacity: 1;
-        top: 0; }
-      #visual .inner .txt.on p {
-        opacity: 1;
-        transform: translateY(0%);
-        transition: 0.5s 0.5s; }
-      #visual .inner .txt.upper .title li span {
-        opacity: 0;
-        top: -100%; }
-      #visual .inner .txt.upper p {
-        opacity: 0;
-        transform: translateY(-100%);
-        transition: 0.5s; }
-  #visual .btn {
-    position: absolute;
-    top: 50%;
-    right: 35%;
-    margin-top: -40px;
-    z-index: 2; }
-    #visual .btn li {
-      width: 70px;
-      height: 70px;
-      opacity: 0.6;
-      background: rgba(0, 0, 0, 0.4);
-      text-align: center;
-      margin: 2px 0;
-      cursor: pointer;
-      transition: 0.5s; }
-      #visual .btn li i {
-        font-size: 15px;
-        line-height: 70px;
-        color: #ddd; }
-      #visual .btn li:hover {
-        opacity: 1; }
-  #visual .rightVid {
-    width: 12%;
-    height: 78%;
-    position: absolute;
-    top: 50%;
-    right: 9%;
-    transform: translateY(-50%);
-    overflow: hidden; }
-    #visual .rightVid .vidFrame {
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+          transform: scale(1);
+          transition: 0.5s 0.5s; }
+        #visual main .mainImg li.on img {
+          transform: scale(1.1);
+          transition: 1s 1s; }
+    #visual main .smallMain li {
+      transition: 0.5s;
+      z-index: 4; }
+      #visual main .smallMain li.on {
+        clip-path: circle(14vw at 50% 50.3%); }
+    #visual main .mainHall {
       width: 100%;
-      height: 300%;
-      position: absolute;
-      top: -100%;
-      left: 0; }
-    #visual .rightVid li {
-      width: 100%;
-      height: calc(100% / 3); }
-      #visual .rightVid li video {
-        height: 100%;
+      height: 100%; }
+      #visual main .mainHall li {
         width: 100%;
-        object-fit: cover;
-        object-position: center center;
-        filter: brightness(1.1) saturate(1.1); }
+        height: 100%;
+        z-index: 3;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        clip-path: circle(14vw at 50% 50.3%);
+        filter: brightness(0.5) blur(5px);
+        transition: 0.5s; }
+        #visual main .mainHall li img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+          transform: scale(1.2);
+          transform-origin: center; }
+        #visual main .mainHall li.on {
+          opacity: 1; }
+    #visual main .largeMain li.on {
+      clip-path: circle(32.9vw at 50% 50.3%); }
+    #visual main .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -30%);
+      z-index: 5; }
+      #visual main .title li {
+        width: 100%;
+        height: 60px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        position: relative; }
+        #visual main .title li span {
+          font: 800 44px/1 'Montserrat';
+          color: #fff;
+          opacity: 0;
+          position: relative;
+          top: 100%;
+          transition: 1s; }
+      #visual main .title.on li span {
+        top: 0%;
+        opacity: 1; }
+      #visual main .title.upper li span {
+        top: -100%;
+        opacity: 0; }
+    #visual main .line {
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border: 1px solid #eee;
+      opacity: 0.2;
+      z-index: 2; }
+    #visual main .line1 {
+      width: 28vw;
+      height: 28vw;
+      margin-left: -14vw;
+      margin-top: -14vw; }
+    #visual main .line2 {
+      width: 44vw;
+      height: 44vw;
+      margin-left: -22vw;
+      margin-top: -22vw; }
+    #visual main .line3 {
+      width: 66vw;
+      height: 66vw;
+      margin-left: -33vw;
+      margin-top: -33vw; }
+    #visual main .btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      margin-top: -20px;
+      z-index: 2; }
+      #visual main .btn i {
+        font-size: 12px; }
+    #visual main .btnPrev {
+      left: 17%;
+      margin-left: -20px; }
+    #visual main .btnNext {
+      right: 17%;
+      margin-right: -20px; }
 
 footer {
   width: 100%;
